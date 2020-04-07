@@ -33,11 +33,9 @@ def selects_most_prominent_color_and_returns_with_count
 end
 
 def counts_number_of_bears_with_goofy_temperaments
- 'SELECT color, COUNT(color)
+ 'SELECT COUNT(temperment)
   FROM bears 
-  GROUP BY color 
-  ORDER BY COUNT(color) 
-  DESC LIMIT 1'
+  WHERE temperment = "goofy"'
 
 def selects_bear_that_killed_Tim
   "Write your SQL query here"
